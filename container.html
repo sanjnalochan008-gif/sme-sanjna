@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Hide Container</title>
+
+    <style>
+        #container {
+            width: 300px;
+            height: 150px;
+            background-color: lightgreen;
+            border: 2px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Show and Hide Container</h2>
+
+<div id="container">
+    This is my container.
+</div>
+
+<br>
+
+<button onclick="showContainer()">Show</button>
+<button onclick="hideContainer()">Hide</button>
+
+<script>
+
+function showContainer() {
+    document.getElementById("container").style.display = "block";
+}
+
+function hideContainer() {
+    document.getElementById("container").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>

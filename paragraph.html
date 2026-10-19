@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add and Remove Paragraph</title>
+</head>
+
+<body>
+
+<p id="para">Default Paragraph</p>
+
+<div id="container"></div>
+
+<button onclick="addParagraph()">Add Paragraph</button>
+<button onclick="deleteParagraph()">Remove Paragraph</button>
+
+<script>
+
+function addParagraph() {
+    // Create a new paragraph
+    let p = document.createElement("p");
+
+    p.innerText = "This is a new paragraph!";
+
+    // Add paragraph to the container
+    document.getElementById("container").appendChild(p);
+}
+
+function deleteParagraph() {
+    document.getElementById("para").remove();
+}
+
+</script>
+
+</body>
+</html>

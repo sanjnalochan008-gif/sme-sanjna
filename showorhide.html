@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OK and Cancel</title>
+</head>
+<body>
+
+    <h2>Welcome to My Website</h2>
+
+    <button onclick="showMessage()">Click Here</button>
+
+    <script>
+        function showMessage() {
+            let result = confirm("Do you want to continue?");
+
+            if (result == true) {
+                alert("Thank you for clicking OK!");
+            } else {
+                alert("Buy");
+            }
+        }
+    </script>
+
+</body>
+</html>
